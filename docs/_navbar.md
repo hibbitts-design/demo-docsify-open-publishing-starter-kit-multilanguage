@@ -1,1 +1,1 @@
-* [Standalone Page](standalone-page.md)
+* [Français](/fr/home.md)
