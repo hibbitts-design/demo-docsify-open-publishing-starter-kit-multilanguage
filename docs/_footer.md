@@ -1,4 +1,4 @@
-:memo: [Propose an Edit to this Site](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit-multilanguage/tree/main/docs)
+:memo: [Propose an Edit to this Site](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-multilanguage/tree/main/docs)
 
 ---
 
