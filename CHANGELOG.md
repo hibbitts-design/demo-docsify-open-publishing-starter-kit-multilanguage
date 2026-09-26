@@ -6,6 +6,11 @@
 **Improved:**
 * Load Embedly platform.js unconditionally instead of only when a card is detected in the DOM
 * Add collapsible mobile ToC toggle and fix mobile width/rule bugs
+* Pad and contain responsive table labels so long headers don't collide or overflow on mobile
+* Unify docsify-v5-core.css and responsive tables plugin across docsify-this and starter kits
+
+**Bugfix:**
+* Add top margin to tables and Mermaid diagrams so they don't sit flush against headings
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
 ### 07/27/2026
