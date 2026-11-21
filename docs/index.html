@@ -163,7 +163,6 @@
       // -----------------------------------------------------------------
       name: 'Docsify\nOpen Publishing Starter Kit',
       homepage: 'home.md',
-      // coverpage: '_coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
       loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || false),
       mergeNavbar: false,
@@ -176,6 +175,9 @@
       maxLevel: 3,
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
+      // Sidebar groups (such as a guide's sections) can be opened and closed, and start open
+      collapsibleSidebarGroups: true,
+      collapseSidebarGroups: false,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone),
 
       skipLink: (!(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('toc'))) || standalone),
@@ -192,7 +194,7 @@
         namespace: 'docsify-open-publishing-starter-kit' + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         pathNamespaces: /^\/[^\/]+(?=\/)/, // a separate search index for each top-level folder (each course or guide)
-        insertAfter: '.app-name',
+        insertBefore: '.sidebar-nav', // the search box goes below the site name
       },
 
       pagination: {
@@ -451,6 +453,15 @@
   <!-- Pagination Plugin -->
   <!-- https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js -->
   <script src="assets/js/docsify-pagination.min.js"></script>
+
+  <!-- Arrow Keys Plugin: ← and → go to the previous and next page (as in Grav Open Publishing Space) -->
+  <script src="assets/js/docsify-arrow-keys.js"></script>
+
+  <!-- Keep My Place Plugin: a "Continue reading" bar on the home page, or on each guide's home page (remove this line to turn it off) -->
+  <script src="assets/js/docsify-keep-my-place.js"></script>
+
+  <!-- Page Titles Plugin: each page's heading and the site's name in the browser tab -->
+  <script src="assets/js/docsify-page-titles.js"></script>
 
   <!-- Docsify Browser-level Image Lazy Loading Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-loading/lib/index.min.js"></script> -->
